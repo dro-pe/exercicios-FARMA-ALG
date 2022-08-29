@@ -29,7 +29,7 @@ begin
     maior_soma := w[1];
 
     for i := 1 to tam do
-        for j := 1 to tam do
+        for j := i to tam do
         begin
             if soma_vetor(w, i, j) > maior_soma then
                 maior_soma := soma_vetor(w, i, j);
