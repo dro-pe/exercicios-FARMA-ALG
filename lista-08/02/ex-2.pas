@@ -20,11 +20,12 @@ begin
 end;
 
 procedure zera_vetor(var w: vetor_i;
-                     tam: longint);
+                     var tam: longint);
 var i: longint;
 begin
     for i := 1 to tam do
         w[i] := 0;
+    tam := 0;
 end;
 
 procedure insere(var w: vetor_i;
@@ -78,7 +79,6 @@ begin
         imprime_vetor(vc, nc);
 
         zera_vetor(vc, nc);
-        nc := 0;
         read(n);
     end;
 end.
