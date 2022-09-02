@@ -1,5 +1,5 @@
 program vetores_002;
-const MIN = 1; MAX = 100;
+const MIN = 1; MAX = 200;
 type vetor_i = array[MIN..MAX] of longint;
 
 procedure adiciona_termo(var w   : vetor_i;
