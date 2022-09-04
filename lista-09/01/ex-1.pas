@@ -61,9 +61,8 @@ begin
 
     if eh_triangular_superior(u, n) then
         writeln('sim')
+    else if eh_triangular_inferior(u, n) then
+        writeln('sim')
     else
-        if eh_triangular_inferior(u, n) then
-            writeln('sim')
-        else
-            writeln('nao');
+        writeln('nao');
 end.
