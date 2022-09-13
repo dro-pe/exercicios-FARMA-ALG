@@ -32,7 +32,7 @@ begin
     soma_coluna := soma;
 end;
 
-function soma_diagonalp(var u: matriz_i;
+function soma_diagonalP(var u: matriz_i;
                         tam  : integer): integer;
 var i, soma: integer;
 begin
@@ -42,11 +42,43 @@ begin
     soma_diagonalp := soma;
 end;
 
-function soma_diagonals(var u: matriz_i;
+function soma_diagonalS(var u: matriz_i;
                         tam  : integer): integer;
 var i, j, soma: integer;
 begin
-    
+    soma := 0;
+    j := tam;
+    for i := 1 to tam do
+    begin
+        soma := soma + u[i,j];
+        j := j - 1;
+    end; 
+    soma_diagonalS := soma;
+end;
+
+function eh_q_magico(var u: matriz_i;
+                     tam  : integer): boolean;
+var s, i, j: integer;
+begin
+    s := soma_linha(u[1], tam);
+    eh_q_magico := false;
+
+    if (soma_diagonalP(u, tam) = s) and (soma_diagonalS(u, tam) = s) then
+    begin
+        i := 1;
+        while (i <= tam) and (soma_linha(u[i], tam) = s) do
+            i := i + 1;
+            
+        if i > tam then
+        begin
+            j := 1;
+            while (j <= tam) and (soma_coluna(u, j, tam) = s) do
+                j := j + 1;
+
+            if j > tam then
+                eh_q_magico := true;
+        end;
+    end;
 end;
 
 var q: matriz_i;
@@ -54,4 +86,10 @@ var q: matriz_i;
 begin
     read(n);
     le_quadrada(q, n);
+
+    // writeln(soma_coluna(q, 3, n));
+    if eh_q_magico(q, n) then
+        writeln('sim')
+    else
+        writeln('nao');
 end.
