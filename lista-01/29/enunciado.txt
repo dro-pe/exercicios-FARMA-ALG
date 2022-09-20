@@ -1,0 +1,17 @@
+Faça um programa Pascal que, usando apenas atribuições e expressões aritméticas, imprima ao contrário um número inteiro de três digitos lido pelo teclado. Desconsidere números que começam ou terminam em zero.
+
+Exemplos:
+Entrada 1:
+123
+Saída Esperada 1:
+321
+
+Entrada 2:
+891
+Saída Esperada 2:
+198
+
+Entrada 3:
+565
+Saída Esperada 3:
+565
