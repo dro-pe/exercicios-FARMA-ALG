@@ -1,0 +1,20 @@
+Faça um programa Pascal que leia do teclado três valores inteiros representando respectivamente a base inferior, base superior e altura de um
+trapezio qualquer em centímetros. O programa deve calcular a área do trapézio usando a fórmula:
+
+A = (B+b)/2 * h
+
+Onde B é a base inferior, b é a base superior e h é a altura. Ao final, o valor da área deve ser impresso na tela. Se as três medidas formarem um quadrado, deve também ser impresso na tela uma mensagem escrita "SIM", caso contrário, imprima "NAO".
+
+Exemplos:
+Entrada 1:
+6 4 2
+Saida Esperada 1:
+10.00
+NAO
+
+Entrada 2:
+4 4 4
+Saída Esperada 2:
+16.00
+SIM
+
