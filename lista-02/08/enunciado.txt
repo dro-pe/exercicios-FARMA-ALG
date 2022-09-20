@@ -1,0 +1,12 @@
+Faça um programa Pascal que leia do teclado três números inteiros representando as medidas dos lados de um triângulo e imprima se ele é equilátero (todos os lados iguais), isósceles (dois lados iguais) ou escaleno (todos os lados diferentes). Não é necessário verificar se os lados formam um triângulo.
+
+Exemplos:
+Entrada 1:
+1 2 3
+Saída Esperada 1:
+Escaleno
+
+Entrada 2:
+1 2 2
+Saída Esperada 2:
+Isosceles
