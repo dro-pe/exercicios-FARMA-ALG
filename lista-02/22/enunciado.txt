@@ -1,0 +1,14 @@
+Faça um programa Pascal que receba uma sequência de números inteiros terminada em 0 e calcule a média aritmética dos valores lidos. Imprima esta média com precisão de duas casas decimais. O valor zero não deve ser processado, ele serve para marcar o final da entrada de dados.
+
+Exemplos:
+Entrada 1:
+1 2 3 0
+
+Saída Esperada 1:
+2.00
+
+Entrada 2:
+10 10 10 10 10 0
+
+Saída Esperada 2:
+10.00
