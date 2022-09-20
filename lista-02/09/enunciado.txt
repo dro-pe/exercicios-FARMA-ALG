@@ -1,0 +1,23 @@
+O Índice de Massa Corporal (IMC) é uma medida usada para se calcular obesidade. O IMC de um adulto com peso considerado saudável tem valores entre 18,5 e 25. Considere a fórmula:
+
+IMC = peso/(altura²)
+
+Considere também que o peso é medido em quilogramas e a altura em metros.
+
+Faça um programa Pascal que leia do teclado um inteiro representando o peso e um real representando a altura de uma pessoa (nesta ordem) e imprima na tela o IMC dela calculado com o peso e a altura fornecidos. Se ela estiver no peso saudável, imprima SIM, caso contrário, imprima NAO. Caso a altura seja 0, imprima ERRO.
+
+Exemplos:
+Entrada 1:
+65
+1.75
+Saída Esperada 1:
+21.22
+SIM
+
+Entrada 2:
+87
+1.55
+
+Saída Esperada 2:
+36.21
+NAO
