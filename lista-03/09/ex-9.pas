@@ -1,14 +1,12 @@
-program arranjos;
-var n, a, b: longint;
+program imprimir_negativos;
+var saldo: real;
 
 begin
-    read(n);
-    a := 1;
-    
-    while a < n do
+    read(saldo);
+    while saldo <> 0 do
     begin
-        b := n - a;
-        writeln(a,' ',b);
-        a := a + 1;
+        if saldo < 0 then
+            writeln(saldo:0:2);
+        read(saldo);
     end;
 end.
