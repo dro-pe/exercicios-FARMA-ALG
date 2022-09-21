@@ -1,0 +1,19 @@
+Faça uma função que receba como parâmetro um número inteiro garantidamente binário e o converta para decimal. Teste sua função usando este código:
+
+program converte;
+var n: longint;
+
+(* coloque aqui o codigo da sua funcao que converte para decimal *)
+
+begin
+    read (n);
+    writeln (converte_em_decimal (n));
+end.
+
+Exemplos de entradas
+10001
+1010
+
+Saídas esperadas
+17
+10
