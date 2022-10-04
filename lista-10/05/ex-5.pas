@@ -1,4 +1,4 @@
-program quadrado_magico_2;
+program quadrado_magico_dois;
 const MIN = 1; MAX = 100;
 type vetor_i = array [MIN..MAX] of integer;
 type matriz_i = array [MIN..MAX] of vetor_i;
